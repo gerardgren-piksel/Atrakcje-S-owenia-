@@ -18,7 +18,7 @@
   <meta name="twitter:image" content="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2a46eae5acc02124107ff9eb792c4270e7b6afa5.jpg" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <style>
-    :root{--bg:#07111f;--card:#0f1930;--card2:#121f3a;--text:#eff5ff;--muted:#b8c7e6;--accent:#7dd3fc;--line:#223458;--shadow:0 20px 60px rgba(0,0,0,.28)}
+    :root{--bg:#07111f;--card:#0f1930;--text:#eff5ff;--muted:#b8c7e6;--accent:#7dd3fc;--line:#223458;--shadow:0 20px 60px rgba(0,0,0,.28)}
     *{box-sizing:border-box}
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:radial-gradient(circle at top,#0d1a33 0,#07111f 48%,#050b14 100%);color:var(--text)}
     a{color:inherit;text-decoration:none}
@@ -129,6 +129,15 @@
             <ul><li>Cena dla dorosłych: spacer po mieście bezpłatny.</li><li>Warto zostać do wieczoru na panoramę zatoki.</li></ul>
           </div>
         </article>
+
+        <article class="card">
+          <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/48c69406d949eb6afd4155c27745ef5094891f23.jpg" alt="Predjama Castle" />
+          <div class="card-body">
+            <h3>Predjama Castle</h3>
+            <p>Jeden z najbardziej niezwykłych zamków w Słowenii, dosłownie wbudowany w skalną ścianę. Miejsce robi duże wrażenie już z zewnątrz i świetnie nadaje się na efektowny przystanek w trasie.</p>
+            <ul><li>Cena dla dorosłych: 21,50 EUR.</li><li>Psy nie są wpuszczane do zamku.</li></ul>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -142,7 +151,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script>
-    const map = L.map('map').setView([46.35, 14.1], 8);
+    const map = L.map('map').setView([46.15, 14.0], 8);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '© OpenStreetMap contributors'
@@ -154,7 +163,8 @@
       {name:'Kozorog przy Jeziorze Jasna', lat:46.4897, lon:13.7786, desc:'Widokowe miejsce z koziorogiem i panoramą gór.'},
       {name:'Dolina Sočy i Bovec', lat:46.3372, lon:13.5517, desc:'Turkusowa rzeka, góry, wodospady i aktywny wypoczynek.'},
       {name:'Jaskinie Škocjan', lat:45.6674, lon:13.9897, desc:'UNESCO i jeden z najbardziej imponujących systemów jaskiń.'},
-      {name:'Piran', lat:45.5278, lon:13.5706, desc:'Najładniejsze miasteczko nad Adriatykiem w Słowenii.'}
+      {name:'Piran', lat:45.5278, lon:13.5706, desc:'Najładniejsze miasteczko nad Adriatykiem w Słowenii.'},
+      {name:'Predjama Castle', lat:45.8156, lon:14.1274, desc:'Niezwykły zamek wbudowany w skałę. Atrakcja płatna, psy nie są wpuszczane do środka.'}
     ];
 
     points.forEach(p => {
